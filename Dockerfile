@@ -6,5 +6,5 @@ RUN apt-get update && \
 COPY scripts scripts/
 RUN scripts/install-protoc.sh
 
-ENV PATH="/root/.pub-cache/bin:$PATH"
 RUN pub global activate protoc_plugin
+ENV PATH /root/.pub-cache/bin:$PATH
